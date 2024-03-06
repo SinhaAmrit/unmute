@@ -1,3 +1,11 @@
 from django.contrib import admin
+from chat.models import Messages
+from import_export.admin import ImportExportModelAdmin
 
-# Register your models here.
+
+class MessagesAdmin(ImportExportModelAdmin):
+    list_display = ["user", "recipient", "body"]
+    list_filter = ["is_read"]
+
+
+admin.site.register(Messages, MessagesAdmin)
