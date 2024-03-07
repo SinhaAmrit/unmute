@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "schema_graph",
     "chat",
+    "userauth",
     "import_export",
 ]
 

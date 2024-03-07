@@ -3,5 +3,5 @@ from chat import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("direct/<username>", views.Directs, name="directs"),
+    path("directs/<username>", views.Directs, name="directs"),
 ]
